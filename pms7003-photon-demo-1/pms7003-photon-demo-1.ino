@@ -191,7 +191,6 @@ bool pms7003_read() {
                     Particle.publish("Data1", printbuf, 60, PRIVATE);
                     packetReceived = true;
                     detectOff = 0;
-                    calcChecksum = 0;
                     inFrame = false;
                 }
             }
